@@ -1,0 +1,20 @@
+name: Witchdoctor
+main: com.minecarts.witchdoctor.Witchdoctor
+version: ${pom.version}
+website: http://minecarts.com
+author: Verrier
+description: A description for this plugin 
+commands:
+  witchdoctor:
+    description: Curse someone!
+    usage: /<command> [player] [set/unset] [effect] [strength] [duration]
+permissions:
+    witchdoctor.*:
+        description: Full access to witchdoctor commands
+        default: op
+    witchdoctor.curse.self:
+        description: Apply curses on self
+        default: op
+    witchdoctor.curse.others:
+        description: Apply curses on others
+        default: op
